@@ -10,17 +10,21 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="## 4.1 叠加定理
+<meta name="description" content="## 1-1 电路和电路模型
 
-1. 线性电路中，任意电路响应，可以视为独立源单独作用于电路产生的各响应分量代数和。">
-<meta property="og:title" content="第四章 叠加定理-">
-<meta property="og:description" content="## 4.1 叠加定理
+## 1-2 参考方向
 
-1. 线性电路中，任意电路响应，可以视为独立源单独作用于电路产生的各响应分量代数和。">
+u,i一致为`关联方向`，反之则为非关联方向。">
+<meta property="og:title" content="第一章 电路和电路模型 - 基尔霍夫定律">
+<meta property="og:description" content="## 1-1 电路和电路模型
+
+## 1-2 参考方向
+
+u,i一致为`关联方向`，反之则为非关联方向。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://Cr1istY.github.io/cr1st4ever.github.io/post/di-si-zhang-%20-die-jia-ding-li--.html">
+<meta property="og:url" content="https://Cr1istY.github.io/cr1st4ever.github.io/post/di-yi-zhang-%20-dian-lu-he-dian-lu-mo-xing-%20-%20-ji-er-huo-fu-ding-lv.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/149236474?v=4">
-<title>第四章 叠加定理-</title>
+<title>第一章 电路和电路模型 - 基尔霍夫定律</title>
 
 
 
@@ -53,7 +57,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">第四章 叠加定理-</h1>
+<h1 class="postTitle">第一章 电路和电路模型 - 基尔霍夫定律</h1>
 <div class="title-right">
     <a href="https://Cr1istY.github.io/cr1st4ever.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -61,7 +65,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/Cr1istY/cr1st4ever.github.io/issues/14" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/Cr1istY/cr1st4ever.github.io/issues/11" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -77,41 +81,42 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2>4.1 叠加定理</h2>
+<div class="markdown-body" id="postBody"><h2>1-1 电路和电路模型</h2>
+<h2>1-2 参考方向</h2>
+<p>u,i一致为<code class="notranslate">关联方向</code>，反之则为非关联方向。</p>
+<h2>1-3 电功率和能量</h2>
+<p>p = ui ， u，i为关联方向则功率吸收，非关联方向则功率发出。</p>
+<p>（若关联方向且u、i乘积为负则发出功率，反之亦然）</p>
+<h2>1-4 电路原件</h2>
+<h2>1-5 电阻原件</h2>
+<h2>1-6 电压源和电流源</h2>
+<p>独立电压源：</p>
 <ol>
-<li>线性电路中，任意电路响应，可以视为独立源单独作用于电路产生的各响应分量代数和。</li>
-<li>任意响应可以表达为各独立源线性组合。</li>
+<li>电压取决于其自身，不会随外电路而改变。</li>
+<li>电流取决于外电路。</li>
+<li>u<sub>s</sub> = 0时，充当导线。</li>
+<li>若 u<sub>s</sub> $\not=$ 0 ，则不能短路，可以开路。</li>
 </ol>
-<p>独立电压源置零： 相当于一根导线</p>
-<p>独立电流源置零： 相当于开路</p>
-<p><strong>功率不可叠加，只可在原电路中求解。</strong></p>
-<h2>4.2 替代定理</h2>
-<p>根据伏安特性，将复杂电路替代为简单电路。</p>
-<p>替代定理描述的是，如果已知连接端口的电压和电流，可以用一个电压源或电流源来替代这个网络，用电阻模拟其产生的电流或电压。</p>
-<h2>4.3 戴维南、诺顿等效</h2>
-<h3>1. 戴维南定理：</h3>
-<p>任意一个端口线性网络均可用一个电压源串联电阻来表示。</p>
-<h3>2.诺顿定理</h3>
-<p>任意一个端口线性网络均可用一个电流源并联电阻来表示。</p>
-<p>其中，u ， i<sub>s</sub>, R<sub>eq</sub> 可以互相转换。</p>
-<h2>4.4 最大功率传输定理</h2>
-<p>适用于负载电阻可变而其他元件不可变的情况。</p>
-<p><strong>P<sub>MAX</sub>= V<sub>oc</sub> / 4R<sub>L</sub></strong></p>
-<p>即 R<sub>L</sub> = R<sub>eq</sub>时，负载功率最大。</p>
-<p><strong>又等效变换对外不对内，故电源功率只能在原网络中求解。</strong></p>
-<h2>4.5 特勒根定理</h2>
-<p><strong>能量守恒。</strong></p>
-<p>在集中参数电路中适用。</p>
+<p>独立电流源：</p>
 <ol>
-<li>
-<p>功率守恒：<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2af43d4a-9510-45ac-94f1-cf6730868063"><img src="https://github.com/user-attachments/assets/2af43d4a-9510-45ac-94f1-cf6730868063" alt="屏幕截图 2024-12-04 193442" style="max-width: 100%;"></a></p>
-</li>
-<li>
-<p>似功率守恒：<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/eb5ab8b8-86cc-48a7-b168-3fb754640e31"><img src="https://github.com/user-attachments/assets/eb5ab8b8-86cc-48a7-b168-3fb754640e31" alt="屏幕截图 2024-12-04 193447" style="max-width: 100%;"></a></p>
-</li>
-</ol></div>
+<li>电流取决于其自身。</li>
+<li>电压取决于外电路。</li>
+<li>i<sub>s</sub> = 0 ，开路。</li>
+<li>若i<sub>s</sub> $\not=$ 0，不能开路，可以短路。</li>
+</ol>
+<h2>1-7 受控电源（非独立电源）</h2>
+<p>当两回路有一条支路连接时，这条支路上的电流为 0 。</p>
+<h2>1-8 基尔霍夫定律</h2>
+<ol>
+<li>支路</li>
+<li>节点</li>
+<li>回路（每个支路和每个节点只能通过一次）</li>
+</ol>
+<h3>KCL</h3>
+<p>集总参数电路中，任何时刻，对于任一节点，所有流入此节点的电流代数和恒为 0 。</p>
+<h3>KVL</h3>
+<p>集总参数电路中，任何时刻，任意回路，所有支路电压降代数和恒为 0 。</p>
+<p><strong>KCL 和 KVL 受拓扑约束。</strong></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
@@ -212,6 +217,6 @@ function iFrameLoading(){
 
 
 </script>
-
+<script>MathJax = {tex: {inlineMath: [["$", "$"]]}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </html>
