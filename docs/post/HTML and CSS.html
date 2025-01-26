@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/149236474?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# Html & CSS
+
+## Day1 - 基本写法
+
+### 1，标签的写法
+
+1. 双标签：<> </>
+2. 单标签：只有开始标签，没有结束标签
+
+### 2，HTML基本骨架
+
+html+head+title+body
+
+!回车-自动生成骨架
+
+html - 整个网页
+
+head - 网页头部
+
+title - 网页标题
+
+body - 网页主体
+
+### 3，标签之间的关系
+
+作用：明确代码的书写位置
+
+1. 父子关系（嵌套关系）
+2. 兄弟关系（并列关系）
+
+### 4，注释
+
+crtl + / 快捷键添加注释
+
+### 5，标题标签
+
+一般用在新闻，文章的标题，网页区域，产品区域等等。">
+<meta property="og:title" content="HTML and CSS">
+<meta property="og:description" content="# Html & CSS
+
+## Day1 - 基本写法
+
+### 1，标签的写法
+
+1. 双标签：<> </>
+2. 单标签：只有开始标签，没有结束标签
+
+### 2，HTML基本骨架
+
+html+head+title+body
+
+!回车-自动生成骨架
+
+html - 整个网页
+
+head - 网页头部
+
+title - 网页标题
+
+body - 网页主体
+
+### 3，标签之间的关系
+
+作用：明确代码的书写位置
+
+1. 父子关系（嵌套关系）
+2. 兄弟关系（并列关系）
+
+### 4，注释
+
+crtl + / 快捷键添加注释
+
+### 5，标题标签
+
+一般用在新闻，文章的标题，网页区域，产品区域等等。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://Cr1istY.github.io/cr1st4ever.github.io/post/HTML%20and%20CSS.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/149236474?v=4">
+<title>HTML and CSS</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">HTML and CSS</h1>
+<div class="title-right">
+    <a href="https://Cr1istY.github.io/cr1st4ever.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/Cr1istY/cr1st4ever.github.io/issues/21" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>Html &amp; CSS</h1>
+<h2>Day1 - 基本写法</h2>
+<h3>1，标签的写法</h3>
+<ol>
+<li>双标签：&lt;&gt; &lt;/&gt;</li>
+<li>单标签：只有开始标签，没有结束标签</li>
+</ol>
+<h3>2，HTML基本骨架</h3>
+<p>html+head+title+body</p>
+<p>!回车-自动生成骨架</p>
+<p>html - 整个网页</p>
+<p>head - 网页头部</p>
+<p>title - 网页标题</p>
+<p>body - 网页主体</p>
+<h3>3，标签之间的关系</h3>
+<p>作用：明确代码的书写位置</p>
+<ol>
+<li>父子关系（嵌套关系）</li>
+<li>兄弟关系（并列关系）</li>
+</ol>
+<h3>4，注释</h3>
+<p>crtl + / 快捷键添加注释</p>
+<h3>5，标题标签</h3>
+<p>一般用在新闻，文章的标题，网页区域，产品区域等等。</p>
+<p>h1 - h6</p>
+<p>都是双标签且独占一行</p>
+<p>h1 一般在一个页面只用一次，用于最重要的内容</p>
+<p>其他的标签没有使用次数限制</p>
+<h3>6，段落标签</h3>
+<p>一段一段出现的文字内容</p>
+<p>产品描述信息</p>
+<p>p(双标签)</p>
+<h3>7，换行和水平线标签</h3>
+<p>br - 换行</p>
+<p>hr - 水平线</p>
+<p>都是单标签</p>
+<h3>8，文本格式化标签</h3>
+<p>加粗、倾斜、下划线、删除线</p>
+<p>strong - b - <strong>加粗</strong></p>
+<p>em - i - <em>倾斜</em></p>
+<p>ins - u - 下划线</p>
+<p>del - s - <del>删除线</del></p>
+<p>一般用左边，有强调含义。</p>
+<h3>9，图像标签</h3>
+<p>作用：在网页中插入图片</p>
+<p>写法：img src = "图片的 URL"</p>
+<p>src - 指定<strong>图像的位置和名称</strong>，是img的必须属性</p>
+<p>./ - vscode生成路径</p>
+<h4>图像标签的属性</h4>
+<p>alt - 替换文本 - 图片无法显示的时候显示的文字</p>
+<p>title - 提示文本 - 鼠标悬停在图片上面的时候显示的文字</p>
+<p>width - 图片的宽度 - 没有单位</p>
+<p>height - 图片的高度 - 值为数字，没有单位</p>
+<h3>10，路径</h3>
+<p>路径是指查找文件时，从起点到终点所经历的路线</p>
+<p>相对路径 - 从当前文件位置出发查找目标文件</p>
+<p>文件/ - 进入某个文件夹</p>
+<p>./ - 当前文件所在的文件夹</p>
+<p>.. - 上一级</p>
+<p>绝对路径 - 从盘符（MAC：根目录）出发查找目标文件</p>
+<p>C:/images/mao.jpg</p>
+<p>在线地址的绝对路径：应用场景为友情链接</p>
+<h3>11，超链接标签</h3>
+<p>作用：跳转到其他页面</p>
+<p>a href = "跳转地址" /a</p>
+<p>href 同样可以通过相对路径的方式跳转到本地文件</p>
+<p>a href = "" target="_blank" /a - 保留原网页</p>
+<p>href 属性值写 # ,表示空链接，跳转到本网页</p>
+<h3>12，多媒体标签</h3>
+<h4>音频</h4>
+<p>audio src = "" /audio</p>
+<p>src - 音频URL - 支持：MP3,Ogg,Wav</p>
+<p>controls - 显示音频控制面板</p>
+<p>loop - 循环播放</p>
+<p>autoplay - 自动播放 - 一般浏览器默认禁用</p>
+<p>HTML5 中属性名和属性值完全意义，可以忽略属性值</p>
+<h4>视频</h4>
+<p>video src = "" /video</p>
+<p>controls loop autoplay</p>
+<p>muted - 静音播放</p>
+<p>autoplay - 在静音状态下才自动播放</p>
+<h3>综合案例1 - 个人介绍</h3>
+<p>网页制作思路，从上到下，从总体到局部，逐步分析制作</p>
+<p>分析内容 - 写代码 - 保存 - 刷新浏览器，看效果</p>
+<h2>Day2 - 嵌套关系</h2>
+<p>列表、表格、表单</p>
+<p>嵌套关系</p>
+<h3>1，列表 无序和有序和定义列表</h3>
+<p>列表的作用：布局内容排列整齐的区域</p>
+<p>列表分类：</p>
+<h4>无序列表 - 不需要规定顺序</h4>
+<p>ul 嵌套 li ，ul 是无序列表，li是列表条目</p>
+<p>ul 里面只能由 li 标签，li 标签可以包裹任何内容</p>
+<h4>有序列表 - 需要规定顺序</h4>
+<p>ol 嵌套 li， ol 是有序列表，li是列表条目</p>
+<h4>定义列表 - 有分类</h4>
+<p>类似于帮助中心</p>
+<p>一个标题对应多个内容</p>
+<p>dl 嵌套 dt 和 dd， dt 是列表的标题， dd 是列表的详情/描述。</p>
+<p>dl 只能包含dt和dd，dt和dd能包含其他内容</p>
+<h3>2，表格</h3>
+<p>类似与excel，用来展示数据</p>
+<p>table 嵌套 tr， tr 嵌套 td/th</p>
+<p>table - 表格</p>
+<p>tr - 行</p>
+<p>th - 表头单元格</p>
+<p>td - 内容单元格</p>
+<p>border - 为表格增加边框线</p>
+<h4>表格结构标签</h4>
+<p>作用：用表格结构标签把内容划分区域，让表格结构更清晰，语义更清楚</p>
+<p>thead - 表格头部 - 表格头部内容</p>
+<p>tbody - 表格主体 - 主要内容区域</p>
+<p>tfoot - 表格底部 - 汇总信息区域</p>
+<h4>合并单元格</h4>
+<p>将多个单元格合并成一个单元格，以合并同类项</p>
+<ol>
+<li>
+<p>明确合并的目标</p>
+</li>
+<li>
+<p>保留最左最上的单元格，添加属性</p>
+<p>跨行合并 - 保留最上的单元格，添加属性 rowspan = "合并单元格的个数"</p>
+<p>跨列合并 - 保留最左的单元格，添加属性 colspan = ""</p>
+</li>
+<li>
+<p>删除其他单元格</p>
+</li>
+</ol>
+<h3>3，表单</h3>
+<p>作用：收集用户信息</p>
+<p>使用场景：登录界面、注册页面、搜索区域</p>
+<h4>input</h4>
+<p>input type = ""</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>type 属性值</th>
+<th>说明</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>文本框，用于输入单行文字</td>
+<td>输入什么显示什么</td>
+</tr>
+<tr>
+<td>password</td>
+<td>密码框</td>
+<td>输入什么加密输出</td>
+</tr>
+<tr>
+<td>radio</td>
+<td>单选框</td>
+<td>多个选项选一</td>
+</tr>
+<tr>
+<td>checkbox</td>
+<td>多选框</td>
+<td>多个选项选多</td>
+</tr>
+<tr>
+<td>file</td>
+<td>上传文件</td>
+<td></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h5>占位文本</h5>
+<p>提示信息</p>
+<p>input type = "" placeholder = "提示信息"</p>
+<h5>radio</h5>
+<p>name - 控件名称 - 划分为同一组，只能选一个</p>
+<p>checked - 默认选中</p>
+<h5>file</h5>
+<p>multip - 多选文件</p>
+<h5>checkbox</h5>
+<p>checked - 默认选中</p>
+<h4>下拉菜单</h4>
+<p>select 嵌套 option，select 是下拉菜单整体，option 是下拉菜单每一项</p>
+<p>selected - 默认选中</p>
+<h4>文本域</h4>
+<p>多行输入文本的表单控件</p>
+<p>textarea - 双标签</p>
+<h4>label 标签</h4>
+<p>添加说明文字</p>
+<p>可以增加表单控件的选中范围</p>
+<p>写法一：</p>
+<p>label只包含内容，不包含表单控件</p>
+<p>设置label标签的for属性值和表单控件的id属性值相同</p>
+<p>写法二：</p>
+<p>使用label标签包裹文字和表单控件，不需要属性值</p>
+<p>提示：label标签增大点击范围的表单控件有：文字框、密码框、上传文件、单选框、多选框、下拉菜单、文本域等等。</p>
+<h4>button - 按钮</h4>
+<p>type属性值：</p>
+<p>submit - 提交（默认功能）</p>
+<p>reset - 重置 - 配合form</p>
+<p>button - 普通按钮，默认没有功能，一般配合js使用</p>
+<h4>无语义的布局标签</h4>
+<p>作用：布局网页</p>
+<p>大盒子 - div - 独占一行</p>
+<p>小盒子 - span - 不换行</p>
+<h4>字符实体</h4>
+<p>在网页中显示预留字符</p>
+<p>  - &amp;nbsp</p>
+<p>&lt; - &amp;lt</p>
+<p>&gt; - &amp;gt</p>
+<h3>综合案例1 - 体育新闻列表</h3>
+<h3>综合案例2 - 注册信息</h3>
+<h2>Day3 CSS</h2>
+<p>CSS用于美化内容</p>
+<h3>1，CSS初体验</h3>
+<p>CSS：层叠样式表，一种样式表语言，用来美化内容。</p>
+<p>书写位置：title 标签下方添加 style 双标签，style 标签里面书写 CSS 代码</p>
+<h3>2，CSS引入方式</h3>
+<ol>
+<li>
+<p>内部样式表：学习使用</p>
+<p>CSS代码在 style 内</p>
+</li>
+<li>
+<p>外部样式表：开发使用</p>
+<p>CSS代码写在单独的CSS文件中</p>
+<p>在HTML使用link标签引入</p>
+</li>
+<li>
+<p>行内样式表：配合JS使用</p>
+<p>CSS 写在标签的 style 属性值里</p>
+</li>
+</ol>
+<h3>3，选择器</h3>
+<p>作用：查找标签，设置样式</p>
+<p>常见的基础选择器：</p>
+<p>标签选择器、<br>
+类选择器、<br>
+id 选择器、<br>
+通配符选择器</p>
+<h4>1. 标签选择器</h4>
+<p>使用<strong>标签名</strong>作为选择器，选中<strong>所有</strong>同名标签设置相同的样式</p>
+<p>例如：p、h1、div、a、img</p>
+<h4>2. 类选择器</h4>
+<p>查找标签，<strong>差异化</strong>设置标签显示效果</p>
+<ol>
+<li>定义类选择器 -&gt; .类名</li>
+<li>使用类选择器 -&gt; 标签添加 class = "类名"</li>
+</ol>
+<p>类名：</p>
+<ol>
+<li>尽量用英文</li>
+<li>一个类选择器可以给多个标签使用</li>
+<li>一个标签可以用多个类名，中间用空格隔开</li>
+<li>开发习惯：类名见名知意，多个单词用 - 隔开</li>
+</ol>
+<h4>3. id选择器</h4>
+<p>查找标签，<strong>差异化</strong>设置标签的显示效果</p>
+<p>场景：id选择器一般配合 javaScript 使用</p>
+<ol>
+<li>定义id选择器 -&gt; #id名</li>
+<li>使用id选择器 -&gt; id = "id名"</li>
+</ol>
+<p>规则：<strong>同一个id选择器在一个页面中只能使用一次。</strong></p>
+<h4>4. 通配符选择器</h4>
+<p>作用：查找页面所有标签，设置相同样式</p>
+<p>*，不需要调用，浏览器<strong>自动</strong>查找页面所有标签，设置相同的格式</p>
+<p>制作网页初期，清除标签默认样式</p>
+<h3>4，画盒子</h3>
+<p>width - 宽度</p>
+<p>height - 高度</p>
+<p>background-color - 背景色</p>
+<h3>3，文字控制属性</h3>
+<p>作用：美化文字</p>
+<ol>
+<li>
+<p>字体大小 - font-size</p>
+</li>
+<li>
+<p>文字粗细 - font-weight</p>
+</li>
+<li>
+<p>字体倾斜 - font-style</p>
+</li>
+<li>
+<p>行高 - line-height - 垂直居中 - 行高属性值等于盒子高度属性值</p>
+</li>
+<li>
+<p>字体族 - font-family - 可设置多个字体，从左往右生效 - 建议使用无衬线字体</p>
+</li>
+<li>
+<p>字体复合属性 - font - 简写方式 - 一个属性五个效果 - 一般用于网页文字公共样式</p>
+<p>font：是否倾斜 是否加粗 字号/行高 字体(必须按照顺序书写)</p>
+</li>
+<li>
+<p>文本缩进 - text-indent - px（像素大小） / em（字号大小）</p>
+</li>
+<li>
+<p>文本对齐 - text-align - left（左对齐）/ center（居中对齐）/ right（右对齐） - 本质是控制内容的对齐方式，属性要设置给内容的父级</p>
+</li>
+<li>
+<p>修饰线 - text-decoration - 去除a标签中的下划线，以及添加下划线/上划线/删除线</p>
+</li>
+<li>
+<p>颜色 - color - rgb写法 rgba写法</p>
+</li>
+</ol>
+<h3>综合案例一、二 - 新闻详情/CSS简介</h3>
+<p>网页制作思路：</p>
+<p>从上到下，先标签再CSS美化</p>
+<h2>Day4</h2>
+<h3>1，复合选择器</h3>
+<p>定义：由<strong>两个或多个基础选择器</strong>，通过不同的方式组合而成</p>
+<p>作用：<strong>更精确、高效的</strong>选择目标元素（标签）</p>
+<h4>1.后代选择器</h4>
+<p>作用：选中某元素的后代元素</p>
+<p>写法：父选择器 子选择器{CSS属性}，父子选择器用空格隔开</p>
+<h4>2.子代选择器</h4>
+<p>选中某元素的<strong>子代</strong>元素</p>
+<p>写法：父选择器 &gt; 子选择器 {CSS属性}，父子选择器之间用 &gt; 隔开</p>
+<h4>3.并集选择器</h4>
+<p>选中<strong>多组</strong>标签设置<strong>相同</strong>的样式。</p>
+<p>写法：选择器1, 选择器2, 选择器n {CSS属性}，选择器之间用 , 隔开</p>
+<h4>4.交集选择器</h4>
+<p>选中<strong>同时</strong>满足<strong>多个条件</strong>的元素</p>
+<p>写法：选择器1选择器2 {CSS属性}，选择器之间连写，没有任何符号</p>
+<p>标签选择器在前</p>
+<h3>2，伪类选择器</h3>
+<p><strong>伪类</strong>表示元素状态，选中元素的某个状态设置样式。</p>
+<p>鼠标悬停状态："选择器:hover {CSS属性}"</p>
+<h4>伪类（超链接）</h4>
+<p>:link - 访问前</p>
+<p>:visited - 访问后</p>
+<p>:hover - 鼠标悬停</p>
+<p>:active - 点击时（激活）</p>
+<h3>3，CSS特性</h3>
+<p>化简代码，定位问题，解决问题</p>
+<h4>1.继承性</h4>
+<p><strong>子级</strong>默认继承<strong>父级</strong>的文字控制属性</p>
+<p>当标签自己有样式时，继承失败。</p>
+<h4>2.层叠性</h4>
+<p>相同的属性会覆盖</p>
+<p>不同的属性会叠加</p>
+<h4>3.优先级</h4>
+<p>也叫权重，当一个标签使用多个选择器时，基于不同种类的选择器的匹配机制</p>
+<p>选择器范围越大，优先级越低。</p>
+<p>通配符 &lt; 标签 &lt; 类 &lt; id &lt; 行类样式 &lt; !important(提权)</p>
+<h5>叠加计算规则</h5>
+<p>复合选择器的权重计算：</p>
+<h3>4，Emmet写法</h3>
+<p>代码的<strong>简写</strong>方式</p>
+<h4>HTML简写</h4>
+<p>类选择器 标签名.类名</p>
+<p>id选择器 标签名#id名</p>
+<p>同级标签 div+p</p>
+<p>父子级标签 div&gt;p</p>
+<p>多个相同标签 span*3</p>
+<p>有内容的标签 div{内容}</p>
+<h4>CSS简写</h4>
+<p>大多数简写方式为属性单词的<strong>首字母</strong></p>
+<h3>5，背景属性</h3>
+<p>背景色 - background-color</p>
+<p>背景图 - background-image</p>
+<p>背景图平铺方式 - background-repeat</p>
+<p>背景图位置 - background-position</p>
+<p>背景图缩放 - background-size</p>
+<p>背景图固定 - background-attachment</p>
+<p>背景符合属性 - background</p>
+<h4>1.背景图</h4>
+<p>网页中，使用背景图实现装饰性的图片效果</p>
+<p>属性名：background-image （bgi）</p>
+<p>属性值：url</p>
+<h4>2.背景图平铺方式</h4>
+<p>background-repeat - (bgp)</p>
+<p>no-repeat - 不平铺</p>
+<p>repeat - 平铺（默认效果）</p>
+<p>repeat-x - 水平方向平铺</p>
+<p>repeat-y - 垂直方向平铺</p>
+<h4>3.背景图位置</h4>
+<p>background-position （bgp）</p>
+<p>关键字写法</p>
+<pre class="notranslate"><code class="notranslate">left - 左侧
+
+right - 右侧
+
+center - 居中
+
+top - 顶部
+
+bottom - 底部
+</code></pre>
+<p>坐标写法</p>
+<pre class="notranslate"><code class="notranslate">数字 + px，正负皆可
+
+正数向左/下移动，负数向右/上移动
+
+一个数字表示水平方向
+
+另一个方向默认居中
+</code></pre>
+<h4>4.背景图大小</h4>
+<p>background-size （bgz）</p>
+<p>关键字写法</p>
+<pre class="notranslate"><code class="notranslate">cover - 等比例缩放背景图片以完全覆盖背景区，可能背景图片部分看不见
+
+contain - 等比例缩放背景图片以完全装入背景区，可能背景区部分空白
+</code></pre>
+<p>百分比写法 - 根据盒子尺寸计算图片大小 - 数字 + 单位</p>
+<h4>5.背景图固定</h4>
+<p>background-attachment （bga）</p>
+<p>作用：背景图不会随着元素的内容滚动</p>
+<p>属性值：fixed</p>
+<h4>6.背景符合属性</h4>
+<p>background （bg）</p>
+<p>属性值：背景色 背景图 背景图平铺方式 背景图位置/缩放 背景图固定 （<strong>空格</strong>隔开各个属性值，不区分顺序）</p>
+<h3>6，显示模式</h3>
+<p>标签的显示特点</p>
+<p>布局网页时，根据标签的显示模式选择合适的标签</p>
+<h4>0.显示模式转换</h4>
+<p>属性名：display</p>
+<p>属性值：</p>
+<pre class="notranslate"><code class="notranslate">block - 块级
+
+inline-block - 行内块
+
+inline - 行内
+</code></pre>
+<h4>1.块级元素</h4>
+<p>独占一行</p>
+<p>宽度默认是父级的100%</p>
+<p>添加宽高属性生效</p>
+<p>div</p>
+<h4>2.行内元素</h4>
+<p>一行共存多个</p>
+<p>尺寸由内容撑开</p>
+<p>宽高不生效</p>
+<p>span</p>
+<h4>3.行内块元素</h4>
+<p>一行共存多个</p>
+<p>尺寸由内容撑开</p>
+<p>宽高生效</p>
+<p>img</p>
+<h3>案例一 - 热词</h3>
+<h3>案例二 - banner效果</h3>
+<h2>Day5</h2>
+<h3>1，结构伪类选择器</h3>
+<p>根据元素的结构关系查找元素</p>
+<h4>1.E:first-child</h4>
+<p>查找第一个元素E</p>
+<h4>2.E:last-child</h4>
+<p>查找最后一个E元素</p>
+<h4>3.E:nth-child</h4>
+<p>查找第N个E元素</p>
+<p>nth-child(公式):</p>
+<pre class="notranslate"><code class="notranslate">偶数标签 - 2n
+
+奇数标签 - 2n-1；2n+1
+
+找到5的倍数的标签 - 5n
+
+找到第五个以后的标签 - n+5
+
+找到第五个以前的标签 - n-5
+</code></pre>
+<h3>2，伪元素选择器</h3>
+<p>创建<strong>虚拟</strong>元素（伪元素），用来摆放<strong>装饰性</strong>的内容</p>
+<p>注意点：</p>
+<pre class="notranslate"><code class="notranslate">必须设置content:""属性，用来设置伪元素的内容，如果没有内容，则引号留空即可
+
+伪元素默认是行内显示模式
+
+权重和标签选择器相同
+</code></pre>
+<h4>1.E::before</h4>
+<p>在元素E的最前面添加一个伪元素</p>
+<h4>2.E::after</h4>
+<p>在元素E的最后面添加一个伪元素</p>
+<h3>3，Pxcook</h3>
+<h3>4，盒子模型</h3>
+<p>作用：布局网页，摆放盒子和内容</p>
+<h4>1.盒子模型-组成</h4>
+<p>盒子模型重要组成部分：</p>
+<pre class="notranslate"><code class="notranslate">内容区域 - width &amp; height
+
+内边距 - padding（出现在内容和盒子边缘之间）
+
+边框线 - border
+
+外边距 - margin（出现在盒子外面）
+</code></pre>
+<h4>2.边框线</h4>
+<p>属性名：border（bd）</p>
+<p>属性值：边框线粗细 线条样式 颜色（不区分顺序）</p>
+<p>solid - 实线</p>
+<p>dashed - 虚线</p>
+<p>dotted - 点线</p>
+<p>设置单边框线：</p>
+<pre class="notranslate"><code class="notranslate">写法：border-方位名词（top、right、bottom、left）
+
+属性值：同上
+</code></pre>
+<h4>3.内边距</h4>
+<p>设置<strong>内容</strong>与<strong>盒子边缘</strong>之间的距离</p>
+<p>属性名：padding / padding-方位</p>
+<p>多值写法：</p>
+<pre class="notranslate"><code class="notranslate">一个值：四边
+
+四个值：上 右 下 左
+
+三个值：上 左右 下
+
+两个值：上下 左右
+</code></pre>
+<h4>4.外边距</h4>
+<p>作用：拉开两个盒子之间的距离</p>
+<p>函数名：margin</p>
+<p>与 padding 同属性值写法</p>
+<p>实现版心居中，左右设置为 auto</p>
+<h4>5.尺寸计算</h4>
+<p>默认情况下：盒子尺寸 = 内容尺寸 + border尺寸 + 内边距尺寸</p>
+<p>所以，给盒子加 border/padding 会撑大盒子</p>
+<p>外边距 margin 不会撑大盒子</p>
+<p>解决方法</p>
+<ol>
+<li><strong>手动做减法</strong>，减掉 border/padding 的尺寸</li>
+<li>内减模式：box-sizing:border-box</li>
+</ol>
+<h4>6.清除默认样式</h4>
+<p>比如：默认的内边距</p>
+<h4>7.盒子模型-属性溢出</h4>
+<p>属性名：overflow</p>
+<p>属性值：</p>
+<pre class="notranslate"><code class="notranslate">hidden - 溢出隐藏
+
+scroll - 溢出滚动 - 无论是否溢出，都显示滚动条位置
+
+auto - 溢出滚动 - 溢出才显示滚动条位置
+</code></pre>
+<h4>8.外边距问题 - 合并现象</h4>
+<p>场景：垂直排列的<strong>兄弟</strong>元素，上下 margin 会合并</p>
+<p>现象：取两个 margin 中的较大值生效</p>
+<h4>9.外边距问题 - 塌陷问题</h4>
+<p>场景：<strong>父子级</strong>的标签，子级的添加 <strong>上外边距</strong> 会产生塌陷问题</p>
+<p>现象：导致父级一起向下移动</p>
+<p>解决方法：</p>
+<pre class="notranslate"><code class="notranslate">取消子级margin，父级设置padding
+
+父级设置 overflow:hidden
+
+父级设置 border-top
+</code></pre>
+<h4>10.行内元素垂直外边距</h4>
+<p>场景：行内元素添加 <strong>margin 和 padding</strong> 都无法改变元素的垂直位置</p>
+<p>解决方法：给行内元素添加 <strong>line-height</strong> 可以改变垂直位置</p>
+<h4>11.盒子模型 - 圆角效果</h4>
+<p>作用：设置元素的外边框为圆角</p>
+<p>属性名：border-radius</p>
+<p>属性值：数字+px / 百分比</p>
+<p>圆角写多值，从左上角开始顺时针转圈</p>
+<h5>1.正圆</h5>
+<p>给正方形设置圆角属性值为 <strong>宽高的一半 / 50%</strong></p>
+<h5>2.胶囊</h5>
+<p>给长方形设置圆角属性为 <strong>盒子高度的一半</strong></p>
+<h4>12.盒子模型 - 阴影效果</h4>
+<p>作用：给元素设置<strong>阴影</strong>效果</p>
+<p>属性名：box-shadow</p>
+<p>属性值：x轴偏移量 y轴偏移量 模糊半径 扩散半径 颜色 内外阴影（<strong>前两个必须书写</strong>）</p>
+<p>默认是外阴影，内阴影添加 inset</p>
+<h3>案例一 - 产品卡片</h3>
+<p>CSS书写顺序</p>
+<ol>
+<li>盒子模型属性</li>
+<li>文字样式</li>
+<li>圆角、阴影等修饰属性</li>
+</ol>
+<h3>案例二 - 新闻列表</h3>
+<h2>Day6 标准流、浮动、Flex布局</h2>
+<h3>1，标准流</h3>
+<p>标准流也叫文档流，指的是标签在页面中默认的<strong>排布规则</strong>，例如：块元素独占一行，行内元素一行显示多个。</p>
+<h3>2，浮动</h3>
+<h4>0，浮动-基本使用与布局</h4>
+<p>属性名：float</p>
+<p>属性值：</p>
+<pre class="notranslate"><code class="notranslate">left - 左对齐
+
+right - 右对齐
+</code></pre>
+<p>特点：顶对齐；具备行内快显示模式特点</p>
+<p>浮动的盒子会脱标</p>
+<h4>1.浮动 - 产品区域布局</h4>
+<p>如果父级宽度不够，浮动的盒子会掉下来</p>
+<h4>2.浮动 - 清除浮动</h4>
+<p>场景：浮动元素会<strong>脱标</strong>，如果<strong>父级没有高度</strong>，子级<strong>无法撑开父级高度</strong>（可能导致页面布局混乱）</p>
+<p>解决方法：清除浮动</p>
+<h5>方法一 额外标签法</h5>
+<p>在父级元素内容的最后添加一个块级元素，设置CSS属性 clear:both</p>
+<h5>方法二 单伪元素法</h5>
+<pre class="notranslate"><code class="notranslate">.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+</code></pre>
+<h5>方法三 双伪元素法</h5>
+<pre class="notranslate"><code class="notranslate">before 解决外边距塌陷问题
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+after 清除浮动
+.clearfix::after {
+    clear: both;
+}
+</code></pre>
+<h5>方法四 overflow</h5>
+<p>父元素添加 CSS属性 overflow:hidden</p>
+<h4>3.浮动 - 总结</h4>
+<p>浮动属性 <strong>float，left 表示左浮动，right 表示右浮动</strong></p>
+<p>特点：</p>
+<ol>
+<li>浮动后的盒子顶对齐</li>
+<li>浮动后的盒子具有行内块属性</li>
+<li>父级宽度不够，浮动的子级会换行</li>
+<li>浮动后的盒子脱标</li>
+</ol>
+<p>清除浮动：推荐双伪元素法</p>
+<p>浮动本质作用在于<strong>实现图文混排</strong></p>
+<h3>3，flex布局</h3>
+<p>flex 布局也叫弹性布局，是浏览器提倡的布局模型，非常适合结构化布局，提供了强大的<strong>空间分布</strong>和<strong>对齐</strong>能力。</p>
+<p>flex 模型不会产生浮动布局中的脱标现象，布局网页更简单、灵活</p>
+<h4>1.Flex - 组成</h4>
+<p>设置方式：给父级元素设置 display:flex，子元素可以自动挤压或拉伸</p>
+<p>组成部分：</p>
+<ol>
+<li>弹性容器 （父级）</li>
+<li>弹性盒子 （子级）</li>
+<li>主轴：默认在<strong>水平</strong>方向</li>
+<li>侧轴/交叉轴：默认在<strong>垂直</strong>方向</li>
+<li>弹性盒子沿主轴方向拉伸</li>
+</ol>
+<p>属性值：</p>
+<ol>
+<li>display: flex - 创建 flex 容器</li>
+<li>justify-content - 主轴对齐方式</li>
+<li>align-items - 侧轴对齐方式</li>
+<li>align-self - 某个弹性盒子侧轴对齐方式</li>
+<li>flex-direction - 修改主轴方向</li>
+<li>flex - 弹性伸缩比</li>
+<li>flex-wrap - 弹性盒子换行</li>
+<li>align-content - 行对齐方式</li>
+</ol>
+<h5>1.主轴对齐方式 - justify-content</h5>
+<pre class="notranslate"><code class="notranslate">flex-start - 默认值，弹性盒子从起点开始依次排列
+flex-end - 弹性盒子从终点开始依次排列
+center - 弹性盒子沿主轴居中排列
+space-between - 弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子之间
+space-around - 弹性盒子沿主轴均匀排列，空白间距均分在弹性盒子两侧
+space-evenly - 弹性盒子沿主轴均匀排列，弹性盒子与容器之间间距相等
+</code></pre>
+<h5>2.侧轴对齐方式</h5>
+<p>属性名：</p>
+<p>align-items - 当前弹性容器内所有弹性盒子的侧轴对齐方式（给弹性容器设置）</p>
+<p>align-sefl - 单独控制某个弹性盒子的侧轴对齐方式（给弹性盒子设置）</p>
+<p>属性值：</p>
+<pre class="notranslate"><code class="notranslate">stretch - 弹性盒子沿着侧轴被拉伸至铺满容器（弹性盒子没有设置侧轴方向尺寸则默认拉伸）
+center - 弹性盒子沿侧轴居中排列
+flex-start - 弹性盒子从起点开始依次排列
+flex-end - 弹性盒子从终点开始依次排列
+</code></pre>
+<h5>3.改变主轴方向</h5>
+<p>主轴<strong>默认在水平方向</strong>，侧轴默认在垂直方向</p>
+<p>属性名：</p>
+<p>flex-direction</p>
+<p>属性值：</p>
+<pre class="notranslate"><code class="notranslate">row - 水平方向，从左向右
+column - 垂直方向，从上向下
+row-reverse - 水平方向，从右向左
+column-reverse - 垂直方向，从下向上
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://Cr1istY.github.io/cr1st4ever.github.io">Cr1st4ever`s Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","Cr1istY/cr1st4ever.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
